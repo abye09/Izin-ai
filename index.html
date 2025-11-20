@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IZIN.AI - Surat Izin Otomatis</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>IZIN.AI - Surat Izin Otomatis</header>
+
+<div class="container">
+    <h2>Jenis Surat</h2>
+    <select id="jenisSurat">
+        <option value="sakit">Surat Izin Sakit</option>
+        <option value="tidak_masuk">Surat Izin Tidak Masuk</option>
+        <option value="pulang">Surat Izin Pulang Awal</option>
+        <option value="kegiatan">Surat Izin Mengikuti Kegiatan</option>
+    </select>
+
+    <label>Nama Lengkap</label>
+    <input type="text" id="nama" placeholder="Masukkan nama Anda">
+
+    <label>Kelas</label>
+    <input type="text" id="kelas" placeholder="Contoh: 10 RPL 2">
+
+    <label>Tanggal</label>
+    <input type="date" id="tanggal">
+
+    <label>Alasan / Keterangan</label>
+    <textarea id="alasan" rows="4" placeholder="Tuliskan alasan"></textarea>
+
+    <button onclick="generateSurat()">Buat Surat</button>
+
+    <div id="hasil" class="outputBox" style="display:none"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
